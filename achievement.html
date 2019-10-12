@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Achievement</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+    crossorigin="anonymous">
+
+    <!--<link rel="stylesheet" type="text/css" href="csshake.min.css">-->
+    <!-- or from surge.sh -->
+    <!--<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">-->
+
+    <style>
+
+body{
+    margin:0;
+    padding: 5px;
+    font-family: sans-serif;
+    background: white;
+}
+
+nav{
+    width: 100%;
+    height: 90px;
+    background: white;
+    
+}
+
+ul{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+ ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 20px;
+     border-left: 5px solid black;
+     padding: 1.5rem;
+
+ }
+
+ ul li:hover{
+     background: white;
+     border-bottom: 4px solid black;
+ }
+
+
+ ul li a{
+     color: black;
+     text-decoration: none;
+     font-size: 20px;
+     font-family: 'Courier New', Courier, monospace;
+ }
+
+ .toggle{
+     width: 100%;
+     padding: 10px 20px;;
+     background: black;
+     text-align: right;
+     box-sizing: border-box;
+     color: white;
+     font-size: 40px;
+     display: none;
+}
+ @media (max-width:768px){
+     .toggle{
+         display: block;
+     }
+ 
+    ul{
+          width: 100%;
+          display: none;
+     }
+
+    ul li{
+          display: block;
+          text-align: center;
+          padding: 5px;
+          font-family: 'Courier New', Courier, monospace;
+     }
+}    
+
+
+
+.active{
+    display: block;
+}
+
+.centerdiv{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+div a{
+    height: 100px;
+    width: 100px;
+    background-color: #f5f6fa;
+    border-radius: 50px;
+    text-align: center;
+    margin: 10px;
+    line-height: 110px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+}
+
+a i{
+    transition: all .3s linear;
+}
+
+
+
+.box{
+margin-top: 100px;;
+width: 40%;
+height: 300px;
+background: white;
+margin: 20px auto;
+display: inline-block;
+border: 2px solid black;
+border-radius:30px;
+box-shadow: 5px 5px;
+margin: 40px;
+}
+
+
+@media (max-width: 1200px) {
+.box{
+margin-top: 100px;    
+width: 100%;
+height: 200px;
+background: white;
+margin: 10px auto;
+}
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    text-align: center;
+}
+
+    </style>
+
+
+
+</head>
+<body>
+    <!--For navbar-->
+    <nav>
+        <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+            </div>
+        <ul style="text-align: center;">
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="#"> Projects</a></li>
+            <li><a href="#"> Achievements</a></li>
+        </ul>
+    </nav>
+
+
+<!-- For certificates -->
+<div class="box" style="margin-top: 85px;">
+        <img src="img/codingninjasc++.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="img/datastructurepython.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="img/intropython.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="img/datastructurepython.jpg" alt="">
+    </div>
+  
+  
+
+ 
+    <!--Script link-->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+          $('.menu').click(function(){
+              $('ul').toggleClass('active');
+          })
+      })
+
+  </script>
+</body>
+</html>

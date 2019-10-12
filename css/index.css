@@ -117,13 +117,12 @@ main{
     margin-top: 0;
 }
 
-/*h2,h2{
-    padding-top: 50px;
-}*/
+h2{
+    font-family: 'Courier New', Courier, monospace;
+}
 
 .leftside{
     padding: 71px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 img{
